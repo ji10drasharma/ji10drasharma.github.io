@@ -1,1 +1,226 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitendra Sharma</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> Jitendra Sharma</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div id="particles-js"></div> <!-- Particles container -->
+        <div class="container">
+            <h1 class="display-4">Jitendra Sharma</h1>
+            <div class="typewriter">
+                <h2 id="motto"></h2> <!-- Typewriter effect will be applied here -->
+            </div>
+        </div>
+    </header>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="sharmaj2_headshot.jpg" alt="Professional Photo" class="img-thumbnail">
+            </div>
+            <div class="col-md-8">
+                <p>Your short introduction here. Summarize your professional identity and what you're passionate about.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Education</h3>
+                        <p>Detailed information about your educational background.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Skills</h3>
+                        <p>A list of your professional skills, programming languages, tools you're proficient with, etc.</p>
+                    </div>
+                    <div class="col-12">
+                        <h3>Interests</h3>
+                        <p>Briefly talk about your personal interests or hobbies outside of your professional life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="container">
+        <h2>Research</h2>
+        <p>Details about your research interests, publications, projects, etc.</p>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <p>Information about your work and teaching experience.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Primary Email: <a href="mailto:sharmaj2@miamioh.edu">sharmaj2@miamioh.edu</a></p>
+        <p>Phone: <a href="tel:+15134623778">+1 513-462-3778</a></p>
+        <p>Location: <a href="https://www.google.com/maps/search/?api=1&query=Oxford,+Ohio,+United+States" target="_blank">Oxford, Ohio, United States</a></p>
+        <!-- Add other social media links as needed -->
+         <!-- Social Icons -->
+         <div class="social-icons">
+            <a href="mailto:ji10drasharma@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/jitendrasharma.me" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/jitendrasharma.me/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <a href="https://www.linkedin.com/in/ji10drasharma/" class="btn btn-primary" target="_blank">LinkedIn Profile</a>
+        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#cvModal">View CV</a>
+    </section>
+    
+
+    <footer class="text-center py-4">
+        <p>&copy; 2023 Jitendra Sharma</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cvModalLabel">Jitendra's CV</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Embed your CV here. Example with iframe -->
+                    <iframe src="Jitendra_Sharma_Resume.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <a href="Jitendra_Sharma_Resume.pdf" class="btn btn-primary" download="Jitendra_Sharma_CV.pdf">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 50, density: { enable: true, value_area: 800 } },
+                color: { value: '#000000' }, // Set particle color to black
+                shape: {
+                    type: 'circle',
+                    stroke: { width: 0, color: '#000000' },
+                    polygon: { nb_sides: 5 }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#000000', // Set line color to black
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                    repulse: { distance: 200, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    
+    <script>
+        const mottos = ["I Make Data Speak", "I Transform Data into Insight", "I Create, Therefore I Code", "I Bring Ideas to Life Through Programming"]; // Your mottos
+        let currentMotto = 0;
+        let mottoElement = document.getElementById("motto");
+    
+        const typeWriter = (text, i, fnCallback) => {
+            if (i < text.length) {
+                mottoElement.innerHTML = text.substring(0, i + 1);
+                setTimeout(() => {
+                    typeWriter(text, i + 1, fnCallback)
+                }, 100); // Typing speed
+            } else if (typeof fnCallback == 'function') {
+                setTimeout(fnCallback, 700); // Wait before start erasing
+            }
+        };
+    
+        const startErase = (text, i, fnCallback) => {
+            if (i >= 0) {
+                mottoElement.innerHTML = text.substring(0, i);
+                setTimeout(() => {
+                    startErase(text, i - 1, fnCallback)
+                }, 50); // Erasing speed
+            } else if (typeof fnCallback == 'function') {
+                setTimeout(fnCallback, 700); // Wait before typing next motto
+            }
+        };
+    
+        const changeMotto = () => {
+            let currentText = mottos[currentMotto];
+            typeWriter(currentText, 0, () => {
+                // After typing is done, start erasing
+                startErase(currentText, currentText.length, () => {
+                    // After erasing is done, go to the next motto
+                    currentMotto = (currentMotto + 1) % mottos.length;
+                    changeMotto();
+                });
+            });
+        };
+    
+        // Start the typewriter effect
+        changeMotto();
+    </script>
+    
+    
+</body>
+
+</html>
