@@ -111,3 +111,52 @@ footer {
     height: 200px; /* Set to your desired height */
     overflow: hidden; /* Hides any content that overflows the set height */
 }
+
+
+#experience {
+    width: 100%;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .position-company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-size: 1rem;
+  }
+  
+  .position-title {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .company, .location, .duration {
+    margin-right: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .position-company {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    .company, .location, .duration {
+      margin-right: 0;
+      margin-top: 5px;
+    }
+  }
+  
+/* Additional CSS to style the links */
+a.company {
+    color: inherit; /* This makes the link color the same as the parent element */
+    text-decoration: none; /* Removes the underline from links */
+  }
+  
+  a.company:hover {
+    text-decoration: underline; /* Adds an underline on hover for better user experience */
+  }
+  
