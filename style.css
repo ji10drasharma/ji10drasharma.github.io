@@ -2,10 +2,33 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header, .jumbotron {
+/* Default styles for both desktop and mobile */
+.header,
+.jumbotron {
     background-color: #f8f9fa;
     margin-bottom: 30px;
 }
+
+.jumbotron {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 300px;
+    overflow: auto;
+    padding: 20px;
+    height: 200px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .jumbotron {
+        height: auto; /* Allow the height to adjust based on content */
+        max-height: none; /* Remove the max-height constraint */
+        overflow: visible; /* Allow content to overflow if needed */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
 
 .container {
     margin-top: 20px;
@@ -54,13 +77,6 @@ footer {
     color: #007bff; /* Adjust hover color as needed */
 }
 
-
-.jumbotron {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
 #particles-js {
     position: absolute;
     top: 0;
@@ -97,21 +113,6 @@ footer {
     height: 50px; /* Adjust this based on your text size */
     overflow: hidden;
 }
-
-.jumbotron {
-    max-height: 300px; /* Adjust this value as needed */
-    overflow: auto; /* Adds scrollbar if content exceeds max-height */
-}
-
-.jumbotron {
-    padding: 20px; /* Adjust the padding to reduce the size */
-}
-
-.jumbotron {
-    height: 200px; /* Set to your desired height */
-    overflow: hidden; /* Hides any content that overflows the set height */
-}
-
 
 #experience {
     width: 100%;
